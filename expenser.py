@@ -73,4 +73,4 @@ def split(participants: list[Participant], expenses: list[Expense]) -> list[Tran
                 balance[addressee] -= to_transfer
                 to_pay_others -= to_transfer
 
-    return transfers
+    return sorted(transfers)
